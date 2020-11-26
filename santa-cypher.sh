@@ -1,8 +1,9 @@
 #! /bin/bash
 
-if [[ -z $1 ]]; then
+# if no stdin
+if test -t 0; then
   echo No no no. Run it like this:
-  echo "$0" \"Some text you want to encode.\"
+  echo 'echo "my message" | '"$0"
   exit 1
 fi
 
@@ -62,7 +63,7 @@ CYPHER[HOHoHoHO]=X
 CYPHER[HOHoHOHO]=Y
 CYPHER[HOHOHoHo]=Z
 
-input=$1
+read -r input
 input=$(echo "$input" | tr '\n' ' ')
 break_char=🎅
 
@@ -89,7 +90,7 @@ to_hohoho() {
   echo "$output"
 }
 
-# unencodes from hohoho
+# decodes from hohoho
 to_text() {
   output=""
 
