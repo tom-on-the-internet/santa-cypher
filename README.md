@@ -1,6 +1,6 @@
 # Santa Cypher
 
-A silly encrypter that converts (poorly) between text and Santa laughing.
+A silly encoder that converts (poorly) between text and Santa laughing.
 
 ## Example
 
