@@ -1,6 +1,8 @@
 # Santa Cypher
 
 A silly encoder that converts (poorly) between text and Santa laughing.
+Video: https://youtu.be/dksyFORajJA
+Blog: https://blog.tomontheinternet.com/santa-cypher/
 
 ## Example
 
